@@ -311,6 +311,7 @@ select {
   background: #fff;
   transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
+  overflow: hidden;
 }
 .hide {
   left: -100%;

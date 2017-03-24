@@ -136,15 +136,13 @@ html, body { position: relative;}
             #page-box{width: 100%;height: 100%;}
             #portrait{display:none; }
             #landscape{display:block; position: relative;}
-            .ending{width: 100%; height: 100%;position: absolute;left:0;top:0;background:#fff;transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;}
+            .ending{width: 100%; height: 100%;position: absolute;left:0;top:0;background:#fff;transition: all 0.2s linear;-webkit-transition: all 0.2s linear;}
             #fadeOut{width:100%;height:100%;position: absolute;top:0;left:0;background:#fff;}
             .ending-pic1{width:672/133.4rem; height:646/133.4rem; position: absolute; top:0 ; left:0 ;}
             .ending-pic2{width:681/140rem; height:542/140rem; position: absolute; top:20/133.4rem; right:35/133.4rem;}
-            .join{width:381/133.4rem; height:52/133.4rem; position: absolute; top:550/133.4rem ; left:787/133.4rem;}
-            .ending-pic3{width:77/133.4rem; height:32/133.4rem; position: absolute;top: 560/133.4rem; right:453/133.4rem;-webkit-animation: org 1s linear infinite;animation: org 1s linear infinite;}
-            //.sign-up{width: 560/133.4rem; height: 65/133.4rem; line-height:65/133.4rem;text-align: center;
-            //         vertical-align:middle;position: absolute; top:519/133.4rem; left: 681/133.4rem;}
-            //.sign-up span{font-family:'黑体';font-size:26/133.4rem; color: #FFFFFF;-webkit-transform:skew(-10deg); transform: skew(-10deg);}
+            .join{width:384/133.4rem; height:53/133.4rem; position: absolute; top:550/133.4rem ; left:787/133.4rem;}
+            .move{width:198/133.4rem; height:50/133.4rem; position: absolute; top:553/133.4rem; right:164/133.4rem;transition: all 0.2s linear;-webkit-transition: all 0.2s linear;}
+            .ending-pic3{width:77/133.4rem; height:32/133.4rem; position: absolute;top: 560/133.4rem; right:453/133.4rem;-webkit-animation: org 0.5s linear infinite;animation: org 0.5s linear infinite;}
             .ending span{text-align: center;line-height:65/133.4rem;font-family:'黑体';font-size:26/133.4rem; color: #FFFFFF;-webkit-transform:skew(-10deg); transform: skew(-10deg);background:#2b69b6;}
             .btn01{width: 360/133.4rem; height:65/133.4rem;position: absolute; top:500/133.4rem; left: 685/133.4rem;}
             .btn02{width: 179/133.4rem;height: 65/133.4rem;position: absolute;top:500/133.4rem;right:107/133.4rem;}
@@ -183,11 +181,10 @@ html, body { position: relative;}
               }to{
                  opacity:0.2;  }
             }
-
-
-
-
-
+            .move02{
+              right:346/133.4rem;
+              z-index: 100;
+            }
 
                 
 }

@@ -58,26 +58,39 @@ function landscape(){
 //  })
 
      //第二版click事件
-    $("#join").click(function(e){
+    var move = document.getElementById("move");
+    var timer = null;
+    var ending02 = document.getElementById("ending02");
+    move.addEventListener('touchmove',function(e){
     	e.preventDefault();
     	//$("#ending").animate({"left":"-100%"},600);
     	//$("#ending02").animate({"left":"0"},600);
+        $("#move").addClass("move02");
 
-        $("#ending").addClass('hide');
-        $("#ending02").addClass('show');
-        $('#rule-icon').click(function(){
-          $('#actionRules').show();
-          $('#userInfo').hide();
-      });
-      $('#actionRules').unbind('click').bind('click',function(){
-          $('#actionRules').hide();
-          $("#userInfo").show();
-      });
-      ProvinceData.init('ddlProvince', 'ddlCity','agency');
-      SaveInfo.init();
+        timer = setTimeout(function(){
+                $("#ending").addClass('hide');
+                $("#ending02").addClass('show');
+                $('#rule-icon').click(function(){
+                    $('#actionRules').show();
+                    $('#userInfo').hide();
+                });
+                $('#actionRules').unbind('click').bind('click',function(){
+                    $('#actionRules').hide();
+                    $("#userInfo").show();
+                });
+                ProvinceData.init('ddlProvince', 'ddlCity','agency');
+                SaveInfo.init();
+            clearTimeout(timer);
+            timer=null;
+        },500);
+
     });
-     
-     
+    ending02.addEventListener('touchmove',function(e){
+        $("#ending").removeClass('hide');
+        $("#ending02").removeClass('show');
+        $("#move").removeClass("move02");
+    });
+
      
     $(function(){
         var w =window.Utils.windowW();

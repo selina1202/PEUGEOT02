@@ -307,8 +307,8 @@ body {
     left: 0;
     top: 0;
     background: #fff;
-    transition: all 0.3s ease-in;
-    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
   }
   #fadeOut {
     width: 100%;
@@ -333,11 +333,20 @@ body {
     right: 0.26236882rem;
   }
   .join {
-    width: 2.85607196rem;
-    height: 0.3898051rem;
+    width: 2.87856072rem;
+    height: 0.39730135rem;
     position: absolute;
     top: 4.12293853rem;
     left: 5.89955022rem;
+  }
+  .move {
+    width: 1.48425787rem;
+    height: 0.37481259rem;
+    position: absolute;
+    top: 4.14542729rem;
+    right: 1.22938531rem;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
   }
   .ending-pic3 {
     width: 0.57721139rem;
@@ -345,8 +354,8 @@ body {
     position: absolute;
     top: 4.19790105rem;
     right: 3.3958021rem;
-    -webkit-animation: org 1s linear infinite;
-    animation: org 1s linear infinite;
+    -webkit-animation: org 0.5s linear infinite;
+    animation: org 0.5s linear infinite;
   }
   .ending span {
     text-align: center;
@@ -422,5 +431,9 @@ body {
     to {
       opacity: 0.2;
     }
+  }
+  .move02 {
+    right: 2.59370315rem;
+    z-index: 100;
   }
 }

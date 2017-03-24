@@ -308,6 +308,7 @@ body {
     top: 0;
     background: #fff;
     transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
   }
   #fadeOut {
     width: 100%;
@@ -344,7 +345,8 @@ body {
     position: absolute;
     top: 4.19790105rem;
     right: 3.3958021rem;
-    -webkit-animation: org 2s linear infinite;
+    -webkit-animation: org 1s linear infinite;
+    animation: org 1s linear infinite;
   }
   .ending span {
     text-align: center;
@@ -410,7 +412,7 @@ body {
       opacity: 1;
     }
     to {
-      opacity: 0.4;
+      opacity: 0.2;
     }
   }
   @-webkit-keyframes org {
@@ -418,7 +420,7 @@ body {
       opacity: 1;
     }
     to {
-      opacity: 0.4;
+      opacity: 0.2;
     }
   }
 }

@@ -49,22 +49,86 @@
 					<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; position: absolute; left: 0px; top: 0px; display: block;">
 					</div>
 				</div>
-				<div id="ending" class="ending" style="display: none;">
-					<img src="img/ending/go02.jpg" class="ending-pic1"/>
-					<img src="img/ending/for02.png" class="ending-pic2"/>
-					<img src="img/ending/prize02.png" class="ending-pic3"/>
-					<img src=""/>
+				<div id="ending" class="ending " style="display: none;">
+					<img src="img/ending/go.jpg" class="ending-pic1"/>
+					<img src="img/ending/information.png" class="ending-pic2"/>
+					<img src="img/ending/jion.png" class="join" id="join"/>
+					<img src="img/ending/match.png" class="ending-pic3"/>
 					<!--<div class="sign-up" id="gotoInfo">-->
-						<span class="btn01" id="gotoInfo">预约试驾</span>
-						<span class="btn02" id="gotoInfo02">>></span>
+						<!--<span class="btn01" id="gotoInfo">预约试驾</span>-->
+						<!--<span class="btn02" id="gotoInfo02">>></span>-->
 						
 					<!--</div>-->
 					<!--<div id="fadeOut" ></div>-->
 				</div>
-				<div id="ending02" class="ending02" style="display: none;">
-					
+				<div id="ending02" class="ending02" >
+					<div  class="userInfo-box" >
+						<div class="input-title"><i><span>好</span>礼相送！预约试驾</i></div>
+						<p class="userInfo-title">我要参加</p>
+						<p class="userInfo-tip">即日起至2017年4月21日，凡在线成功填写预约试驾表单的用户，即有机会赢取精美好礼一份！</p>
+						<ul class="input-form">
+							<li>
+								<span class="firstspan">姓名</span>
+								<input type="text" id="username" name="username" placeholder="姓名"  maxlength=10 minlength=2 required="required" />
+							</li>
+							<li>
+								<span class="firstspan">手机</span>
+								<input type="tel" id="phone" name="phone" placeholder="手机" required="required" />
+							</li>
+							<li>
+								<span>试驾车型</span>
+								<select name="cartype" id="cartype">
+									<option value="-1">选择车型</option>
+									<option value="61">4008</option>
+									<option value="62">3008</option>
+									<option value="63">2008</option>
+								</select>
+							</li>
+							<li class="province-city">
+								<select id="ddlProvince" name="ddlProvince" class="ddlProvince" title="省/00" >
+									<option value="-1">选择省份</option>
+								</select>
+								<select id="ddlCity" name="ddlCity" class="ddlCity">
+									<option value="-1">选择城市</option>
+								</select>
+							</li>
+							<li>
+								<span>经销商</span>
+								<select id="agency" name="agency"  >
+									<option value="-1">经销商</option>
+								</select>
+							</li>
+						</ul>
+						<div class="input-form-right">
+							<img src="img/ending/jiangpin.png" alt=""/>
+						</div>
+						<div class="btn-userInfo"><p  id="btn-userInfo" >提&nbsp;&nbsp;&nbsp;交</p></div>
+						<a id="rule-icon" >发奖及售后说明</a>
+					</div>
+					<div class="userInfo" id="actionRules">
+						<div  class="action-rules">
+							<span class="close">×</span>
+							<h2>发奖及售后说明:</h2>
+							<h4>
+								1、即日起至2017年4月21日，预约试驾，填写完整个人信息，即有机会获得精美礼品，数量有限，发完为止。获奖名单在活动结束后统一公布，敬请期待。<br/>
+								2、所有礼品为电子卡，自活动结束之日起，60个工作日内以短信方式统一发放，还请务必填写真实姓名、联系电话，以便活动后发放电子兑换码。<br/>
+								3、活动结束后行圆汽车将与获奖网友联系，届时请您与我们核实获奖信息（获奖人姓名、手机号码）。<br/>
+								4、若活动结束后的60个工作日内，无法联系到您，且则视为您主动放弃获奖资格，奖品亦不予保留。<br/>
+								5、最终解私权归行圆汽车所有，如有疑问，请邮件至Service1@xingyuanauto.com邮箱，我们会第一时间为您解答。<br/>
+							</h4>
+						</div>
+					</div>
+					<div class="userInfo" id="prizeResult">
+						<div class="prize-result">
+							<div class="prize-result-info">
+								<h1 class="notGet"><i></i></h1>
+								<p>感谢您参与东风标致X008 SUV盛会活动</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<!--<div id="userInfo" class="userInfo">-->
+
+                    <!--<div id="userInfo" class="userInfo">-->
 					<!--<div id="userInfo-box" class="userInfo-box" >-->
 						<!--<span id="close-userInfo" class="close">×</span>-->
 						<!--<p class="userInfo-title">报名注册</p>-->
@@ -164,6 +228,7 @@
 	<script src="js/province.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/jiangqian.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/share.demo.js" type="text/javascript" charset="utf-8"></script>
 	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 	<script src="js/wx_share.js"></script>
 	<script>

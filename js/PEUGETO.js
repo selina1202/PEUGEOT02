@@ -2377,6 +2377,7 @@ p.nominalBounds = new cjs.Rectangle(108.4,-14.3,478.8,142.3);
 			$('#ending').show();
 			$('#fadeOut').fadeOut(500);
 			$('#animation_container').hide();
+			$('div.btn-music').css('opacity',0);
 			
 			
 		}

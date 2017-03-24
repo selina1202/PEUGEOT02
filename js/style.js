@@ -58,11 +58,24 @@ function landscape(){
 //  })
 
      //第二版click事件
-    $("#gotoInfo02").click(function(e){
+    $("#join").click(function(e){
     	e.preventDefault();
-    	$("#ending").animate({"left":"-100%"},600);
-    	$("#ending02").show(200);
-    })
+    	//$("#ending").animate({"left":"-100%"},600);
+    	//$("#ending02").animate({"left":"0"},600);
+
+        $("#ending").addClass('hide');
+        $("#ending02").addClass('show');
+        $('#rule-icon').click(function(){
+          $('#actionRules').show();
+          $('#userInfo').hide();
+      });
+      $('#actionRules').unbind('click').bind('click',function(){
+          $('#actionRules').hide();
+          $("#userInfo").show();
+      });
+      ProvinceData.init('ddlProvince', 'ddlCity','agency');
+      SaveInfo.init();
+    });
      
      
      
